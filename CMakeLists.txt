@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.8)
 project(elevator_node)
 
-find_package(catkin REQUIRED COMPONENTS message_generation roscpp rospy std_msgs frc_robot_utilities_py_node)
+find_package(catkin REQUIRED COMPONENTS message_generation roscpp rospy std_msgs frc_robot_utilities_py_node ck_utilities_py_node)
 
 # add_message_files(
 #   FILES
