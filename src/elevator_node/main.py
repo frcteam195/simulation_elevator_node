@@ -31,6 +31,9 @@ def ros_func():
 
     while not rospy.is_shutdown():
 
+        if hmi_updates.get() is None:
+            continue
+
         if robot_status.get_mode() == RobotMode.TELEOP:
             elevatorMotor.set(ControlMode.PERCENT_OUTPUT, hmi_updates.get().elevator_vertical, 0.0)
 
